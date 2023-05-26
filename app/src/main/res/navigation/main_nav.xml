@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/home_Page">
+
+    <fragment
+        android:id="@+id/home_Page"
+        android:name="com.example.shimon.practicequizapp.Home_Page"
+        android:label="fragment_home__page"
+        tools:layout="@layout/fragment_home__page" >
+        <action
+            android:id="@+id/action_home_Page_to_playFragmnet2"
+            app:destination="@id/playFragmnet" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragmnet"
+        android:name="com.example.shimon.practicequizapp.playFragmnet"
+        android:label="fragment_play_fragmnet"
+        tools:layout="@layout/fragment_play_fragmnet" >
+        <action
+            android:id="@+id/action_playFragmnet_to_resultFragment"
+            app:destination="@id/resultFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.shimon.practicequizapp.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>

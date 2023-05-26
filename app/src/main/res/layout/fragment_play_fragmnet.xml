@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".playFragmnet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#242B2E"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SBS QUIZ"
+            android:fontFamily="@font/aladin"
+            android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
+            android:textColor="#85DDA4"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/scoreTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 00"
+                android:fontFamily="@font/aladin"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/questionNumberTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aladin"
+                android:text="Score: 1/10"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timer-00"
+            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+            android:textColor="#FB0505"
+            android:gravity="center"
+            android:fontFamily="@font/aladin"/>
+
+        <TextView
+            android:id="@+id/questionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Hello"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:background="@drawable/background_shape"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="#F9F9F9"
+            android:fontFamily="@font/aladin"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option"
+                android:background="@drawable/background_shape"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:fontFamily="@font/aladin"/>
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option"
+                android:background="@drawable/background_shape"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:fontFamily="@font/aladin"/>
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option"
+                android:background="@drawable/background_shape"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:fontFamily="@font/aladin"/>
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option"
+                android:background="@drawable/background_shape"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:fontFamily="@font/aladin"/>
+
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextQuestionBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/background_shape"
+            android:text="Next Question"
+            android:fontFamily="@font/aladin"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="@color/white"/>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
